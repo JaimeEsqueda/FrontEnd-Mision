@@ -5,25 +5,91 @@
         <meta http-equiv="X-UA-Compatible" contetnt="IE=edge">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title>Pasteleria Aranza Reposteria</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+            /* Estilo de header */
+            header {
+                background-color: rgb(84, 97, 211);
+                padding: 30px;
+                text-align: center;
+                font-size: 20px;
+                color: white;
+            }
+    
+            /* Crear 2 columnas con la misma posición en la fila */
+            nav {
+                float: left;
+                width: 30%;
+                height: 300px;
+                /* only for demonstration, should be removed */
+                background: #ccc;
+                padding: 20px;
+            }
+    
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+    
+            article {
+                float: right;
+                padding: 15px;
+                width: 50%;
+                background-color: #d38225;
+                height: 370px;
+            }
+            article2 {
+                float: left;
+                padding: 15px;
+                width: 50%;
+                background-color: #87c537;
+                height: 370px;
+            }
+            /* Clear floats after the columns */
+            section::after {
+                content: "";
+                
+                display: table;
+                clear: both;
+            }
+    
+            /* Estilo de footer */
+            footer {
+                background-color: rgb(170, 66, 139);
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+    
+            /* Responsive layout */
+            @media (max-width: 600px) {
+    
+                nav,
+                article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
     </head>
     <body>
-        
+        <header>
+            <p> Direccion:Almeria 210 Colonia El dorado primera seccion Aguascalientes, Ags </p>
+<img src="./assets/img/LogoPasteleriaPracticapng.png" alt="Aranza Reposteria" width="350">
 
-<img src="./assets/img/LogoPasteleriaPracticapng.png" alt="Aranza Reposteria" width="450">
+            <h1>Pasteleria Aranza Reposteria</h1>
+            <h2>Bienvenidos fitness buddies</h2>
+</header> 
 
-<p>Almeria 210 Colonia El dorado primera seccion Aguascalientes, Ags</p>
 
-<h1>Bienvenidos fitness buddies</h1>
-
-<hr>
-
-<h2>Paquetes</h2>
-<dl>
-    <dt>Paquete empieza al 100 el dia</dt>
-    <dd>Elige cualquier bizcocho y llevate dos ingredientes decorativos sin costo</dd>
-
-</dl>
-<hr>
+<article2>
 <h2>Menu de Pasteleria</h2> 
 <ul>
     <li>Tipos de Bizcochos
@@ -40,9 +106,13 @@
         </ul>
     </li>
 </ul>
-
-
-
+<a href="./pedidopasteleria.html">
+    <input type="button" value="Hacer pedido">
+    </a>
+    </body>
+    </html>
+</article2>
+<article>
 <h2>Decorativos para tu Bizcocho</h2>
 <ul>
     <li>Mermeladas
@@ -71,9 +141,15 @@
         </ul>
     </li>
 </ul>
+</article>
 
-<a href="./pedidopasteleria.html">
-<input type="button" value="Hacer pedido">
-</a>
-</body>
-</html>
+
+
+<footer>
+<h2>Paquetes</h2>
+<dl>
+    <dt>Paquete empieza el dia al 100 </dt>
+    <dd>Elige cualquier bizcocho y llevate dos ingredientes decorativos sin costo, antes del medio dia</dd>
+
+</dl>
+</footer>

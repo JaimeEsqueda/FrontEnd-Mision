@@ -5,13 +5,89 @@
         <meta http-equiv="X-UA-Compatible" contetnt="IE=edge">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title>Pedido Aranza Reposteria</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+            /* Estilo de header */
+            header {
+                background-color: rgb(84, 97, 211);
+                padding: 30px;
+                text-align: center;
+                font-size: 20px;
+                color: white;
+            }
+    
+            /* Crear 2 columnas con la misma posición en la fila */
+            nav {
+                float: left;
+                width: 30%;
+                height: 300px;
+                /* only for demonstration, should be removed */
+                background: #ccc;
+                padding: 20px;
+            }
+    
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+    
+            article {
+                float: right;
+                padding: 15px;
+                width: 50%;
+                background-color: #d38225;
+                height: 625px;
+            }
+            article2 {
+                float: left;
+                padding: 15px;
+                width: 50%;
+                background-color: #87c537;
+                height: 625px;
+            }
+            /* Clear floats after the columns */
+            section::after {
+                content: "";
+                
+                display: table;
+                clear: both;
+            }
+    
+            /* Estilo de footer */
+            footer {
+                background-color: rgb(170, 66, 139);
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+    
+            /* Responsive layout */
+            @media (max-width: 600px) {
+    
+                nav,
+                article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
     </head>
     <body>
         
-
+<header>
+    
 <img src="./assets/img/LogoPasteleriaPracticapng.png" alt="Aranza Reposteria" width="450">
 
-<h1>Pedidos</h1>
+
+</header>
+<article>
 
 <ul>
     <li>Activos
@@ -30,15 +106,17 @@
         </ul>
     </li>
 </ul>
-
-<h1>Inventario</h1>
+</article>
+<article2>
+    <h1>Pedidos</h1>
+<h13Inventario</h3>
 <ul>
     <li>Tipos de Bizcochos
         <ul>
             <li>Bizcocho de zanahoria--------------------------------10porciones</li>
             <li>Bizcocho de Avena y betabel--------------------------11porciones</li>
             <li>Bizcocho de harina de almendras con mapple-----------12porciones</li>
-            <li>Bizcocho de frutos rojos-----------------------------14porciones/li>
+            <li>Bizcocho de frutos rojos-----------------------------14porciones</li>
             <li>Bizcocho de cocoa selva negra------------------------15porciones</li>
             <li>Bizcocho de matcha--------------------------------11porciones</li>
             <li>Bizcocho de nueces y semillas------------------------15porciones</li>
@@ -50,7 +128,7 @@
 
 
 
-<h2>Decorativos para tu Bizcocho</h2>
+<h4>Decorativos para  Bizcocho</h4>
 <ul>
     <li>Mermeladas
         <ul>
@@ -78,5 +156,6 @@
         </ul>
     </li>
 </ul>
+</article2>
 </body>
 </html>

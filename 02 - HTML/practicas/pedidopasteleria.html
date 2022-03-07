@@ -5,15 +5,90 @@
         <meta http-equiv="X-UA-Compatible" contetnt="IE=edge">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title>Pedido Aranza Reposteria</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+            /* Estilo de header */
+            header {
+                background-color: rgb(84, 97, 211);
+                padding: 30px;
+                text-align: center;
+                font-size: 20px;
+                color: white;
+            }
+    
+            /* Crear 2 columnas con la misma posición en la fila */
+            nav {
+                float: left;
+                width: 30%;
+                height: 300px;
+                /* only for demonstration, should be removed */
+                background: #ccc;
+                padding: 20px;
+            }
+    
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+    
+            article {
+                float: left;
+                padding: 15px;
+                width: 50%;
+                background-color: #d38225;
+                height: 370px;
+            }
+            article3 {
+                float: right;
+                padding: 15px;
+                width: 50%;
+                background-color: #87c537;
+                height: 370px;
+            }
+            /* Clear floats after the columns */
+            section::after {
+                content: "";
+                
+                display: table;
+                clear: both;
+            }
+    
+            /* Estilo de footer */
+            footer {
+                background-color: rgb(170, 66, 139);
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+    
+            /* Responsive layout */
+            @media (max-width: 600px) {
+    
+                nav,
+                article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
     </head>
     <body>
         
-
+<header>
+    <h1>Levantamiento de pedido</h1>
 <img src="./assets/img/LogoPasteleriaPracticapng.png" alt="Aranza Reposteria" width="450">
-
-<h1>Aqui se hace el pedido</h1>
+</header>
 
 <form action="pedidopasteleria.js">
+    <article>
 <p> Elija los tipos de bizcocho que quiere para su Pastel</p>
 <input type="checkbox" id="Bizcocho1" name="Bizcocho1" value="zanahoria">
 <label for="Bizcocho1">Bizcocho de zanahoria</label><br>
@@ -33,7 +108,17 @@
 <label for="Bizcocho8">Bizcocho de pay de limon</label><br>
 <input type="checkbox" id="Bizcocho9" name="Bizcocho9" value="marmoleado">
 <label for="Bizcocho9">Bizcocho de marmoleado</label><br>
-
+<p>Pasara por el a recogerlo o gusta que se lo llevemos a domicilio?</p>
+<input type="radio" id="recogerlo" name="recogerlo" placeholder="Recogerlo">
+<label for="mesa">Recogerlo </label>
+<br><br>
+<input type="radio" id="Domicilio" name="Domicilio" placeholder="Domicilio">
+<label for="Domicilio">A domicilio ($30 extra) </label>
+<br><br>
+<input type="reset">
+<input type="submit">
+</article>
+<article3>
 <p> Elija los tipos de decorativos para tu bizcocho </p>
 <input type="checkbox" id="Bizcocho1" name="Bizcocho1" value="Mermelada de Fresa">
 <label for="Bizcocho1">Mermelada de Fresa</label><br>
@@ -62,16 +147,11 @@
 <input type="checkbox" id="Bizcocho13" name="Bizcocho13" value="frutos rojos">
 <label for="Bizcocho1">frutos rojos</label><br>
 
-<p>Pasara por el a recogerlo o gusta que se lo llevemos a domicilio?</p>
-<input type="radio" id="recogerlo" name="recogerlo" placeholder="Recogerlo">
-<label for="mesa">Recogerlo </label>
-<br><br>
-<input type="radio" id="Domicilio" name="Domicilio" placeholder="Domicilio">
-<label for="Domicilio">A domicilio ($30 extra) </label>
-<br><br>
-<input type="reset">
-<input type="submit">
+</article3>
 
+    
+
+<article3>
 <h3>Complete la siguiente informacion por favor</h3>
 
     <label for="Nombre">Nombre</label>
@@ -83,7 +163,7 @@
 <input type="email" id="correo1" name="correo1"><br><br>
 <label for="Nombre">Descripcion del pedido</label>
 <input type="Descripcion" id="Descripcion" name="Descripcion" placeholder="Descripcion general del pedido" >
-<br><br>
+</article3>
 
 </form>
 
