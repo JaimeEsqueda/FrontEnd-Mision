@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="C:/Users/chimi/OneDrive/Documents/Developer Full Stack/FrontEnd/04 - JS/practica/Mine/imagenes/pokeballfondo.png" type="image/x-icon">
+    <link rel="stylesheet" href="C:/Users/chimi/OneDrive/Documents/Developer Full Stack/FrontEnd/04 - JS/practica/Mine/css/autofill.css">
+    <link rel="stylesheet" href="C:/Users/chimi/OneDrive/Documents/Developer Full Stack/FrontEnd/04 - JS/practica/Mine/css/StylesPokedexJaimeEsqueda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body> 
+    <section class="pokedeximage">  
+<section class="flex">
+
+  
+        
+    <section class="card">
+        <div class="card-colorpoke"></div>
+        <div data-poke-card class="poke-card">
+        <img data-poke-img class="card-body-img" src="C:/Users/chimi/OneDrive/Documents/Developer Full Stack/FrontEnd/04 - JS/practica/Mine/imagenes/pokeballfondo.png" width="110"/>
+        <img class="fondo" src="C:/Users/chimi/OneDrive/Documents/Developer Full Stack/FrontEnd/04 - JS/practica/Mine/imagenes/fondopoke.png" alt="fondo" width="250">   
+    
+        <div class="containerInfo" >
+            <div data-poke-name class="name">Pokedex</div>
+            <div data-poke-id class="id"></div>
+            <div data-poke-types class="poke-types">
+        </div>
+
+        <form action="" onsubmit="searchPokemon(event)" class="form">
+            <input class="input" type="text" name="pokemon" autocomplete="off" placeholder="PokemonName">
+        </form>
+        </div>
+    </section>
+        
+         
+     <div class="division"><div class="division2"></div></div>
+
+     <section class="card2">                  
+        <h2>Statistics</h2>
+        <div data-poke-stats class="poke-stats"><p class="loading">Loadig...</p></div>
+        
+        <h2>Moves</h2>
+        <div data-poke-moves class="poke-moves"><p class="loading2">Loadig...</p></div>
+    
+    </section>  
+        
+        
+
+    </div>
+</section>  
+</section>
+    <script src="C:/Users/chimi/OneDrive/Documents/Developer Full Stack/FrontEnd/04 - JS/practica/Mine/PokedexJaimeEsqueda.js"></script>
+</body>
+</html>
